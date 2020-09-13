@@ -1,0 +1,736 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Noto Serif", "Noto Serif JP", serif;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFF;
+  list-style-type: none;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: #333333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+/*---ヘッダー設定---*/
+header {
+  margin-bottom: 100px;
+}
+
+header p, header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  margin: 35px auto 10px auto;
+}
+
+header h1 {
+  font-weight: 400;
+}
+
+header .flex--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+header section {
+  width: 100%;
+  margin: 0;
+}
+
+header address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+}
+
+header address:before {
+  content: "\f879";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  background-color: #38bc9e;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 18px;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header li {
+  width: calc(100%/6);
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+header li:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: #333333;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+header li:last-child::after {
+  content: none;
+}
+
+header li:hover {
+  background-color: #eeeeee;
+}
+
+header li span {
+  font-weight: normal;
+}
+
+header h2 {
+  text-align: center;
+}
+
+.header--c_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 3.0rem;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
+
+.header--c_name:before {
+  content: url("../images/logo.png");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header--c_name_sub {
+  position: absolute;
+  top: 45px;
+  left: 85px;
+  font-size: 1.8rem;
+  color: #952c3e;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+
+.header--width {
+  width: 1140px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header--tel {
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 10px;
+  color: #38bc9e;
+  font-size: 3.8rem;
+  line-height: 1;
+}
+
+.header--tel a {
+  color: #38bc9e;
+}
+
+.header--tel a:hover {
+  opacity: 0.7;
+}
+
+.header--btn1 {
+  margin-top: 15px;
+  height: 65px;
+  width: 220px;
+  margin: auto 3px auto  0;
+}
+
+.header--btn1 a {
+  font-size: 1.8rem;
+  color: white;
+  display: table-cell;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #952c3e;
+  border: double 1px #952c3e;
+  outline: double 2px #952c3e;
+  outline-offset: 1px;
+  margin: auto 3px auto  0;
+  height: 65px;
+  width: 220px;
+  text-align: center;
+  line-height: 1.75;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.header--btn1 a:before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  margin-right: 10px;
+}
+
+.header--btn1 a:hover {
+  opacity: 0.7;
+}
+
+.header--holiday {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 55px;
+  left: 200px;
+}
+
+.header--menu {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+.header--menu a:hover {
+  color: #952c3e;
+}
+
+.header--menu .header--menu_sub a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.header--menu--en {
+  font-size: 1.0rem;
+  font-family: "Noto Serif", "Noto Serif JP", serif;
+  display: block;
+  color: #952c3e;
+}
+
+.header-title-wrap {
+  margin: 0;
+  background-image: url("../images/top-image.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+
+.header--title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.header--title_sub {
+  font-size: 1.4rem;
+  color: #952c3e;
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.header--title_sub:after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 1px;
+  background-color: #952c3e;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: ranslateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header--icon_dice {
+  position: absolute;
+  top: 30.5px;
+  left: 45%;
+  -webkit-transform: ranslateX(-50%);
+  transform: translateX(-50%);
+}
+
+/*---サイドバー設定---*/
+.flex--wrap {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside {
+  width: 270px;
+  max-width: 100%;
+  margin-right: 60px;
+  margin-left: 0;
+}
+
+aside h3 {
+  color: #952c3e;
+  font-size: 2.2rem;
+  text-align: center;
+  border-bottom: 1px solid #952c3e;
+  padding-bottom: 8px;
+  font-weight: inherit;
+  letter-spacing: 0.05em;
+}
+
+aside li a {
+  height: 47px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5px;
+}
+
+aside li a:hover {
+  background-color: #f5f5f5;
+}
+
+/*---メイン設定---*/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 810px;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main dl {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+main dl:nth-of-type(even) {
+  margin: 30px 0px 75px 0;
+}
+
+main dt {
+  font-size: 2.6rem;
+  color: #952c3e;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main dt span:before {
+  content: "\A";
+  white-space: pre;
+}
+
+main dd {
+  margin-top: 30px;
+  font-weight: bold;
+  width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main li {
+  margin-right: 10px;
+}
+
+main li:last-child {
+  margin-right: 0;
+}
+
+main li a {
+  display: table-cell;
+  width: 35px;
+  height: 35px;
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+main li a:hover {
+  color: #c8c8c8;
+}
+
+.main--article--wrap {
+  position: relative;
+  min-width: 390px;
+  margin: 30px auto 30px 0;
+}
+
+.main--category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 90px;
+  height: 25px;
+  font-family: "Noto Sans JP", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main--link {
+  color: white;
+}
+
+/*---フッター設定---*/
+footer {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #e2e2e2;
+  margin-top: 140px;
+  max-width: 100%;
+  position: relative;
+}
+
+footer:before {
+  content: "";
+  background-image: url(../images/bg-tr.png);
+  position: absolute;
+  top: -140px;
+  right: 0;
+  display: inline-block;
+  width: 650px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+footer h2 {
+  font-size: 3.0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: inherit;
+  margin-left: 15px;
+  letter-spacing: 0.1em;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+footer ul li {
+  padding-right: 13px;
+  padding-left: 13px;
+  border-right: 1px #333333 solid;
+}
+
+footer ul li:first-child {
+  padding-left: 0;
+}
+
+footer ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+footer ul li a:hover {
+  color: #952c3e;
+}
+
+.footer--design {
+  max-width: 100%;
+  width: 1140px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer--c_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.footer--logo {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #333333;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 70px;
+}
+
+.footer--sns {
+  color: #333333;
+  margin-left: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer--sns_icon {
+  font-size: 2.5rem;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer--sns_icon:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter:before {
+  line-height: 50px;
+}
+
+.fa-facebook-f:before {
+  line-height: 50px;
+}
+
+.footer--copy {
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  font-size: 1.3rem;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+}
+/*# sourceMappingURL=style.css.map */
